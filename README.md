@@ -42,11 +42,3 @@ CMakeLists.txt
 - **Double Bit Flip**: bật checkbox, chọn 2 vị trí khác nhau, chạy lại simulation
 - Flip được áp dụng trên **codeword đầu tiên** (kênh lý tưởng, không AWGN) để minh họa syndrome rõ ràng
 
-### Tab 3 — Log
-- Toàn bộ log text của quá trình mô phỏng
-
-## Lý thuyết
-- **Hamming (7,4) Systematic**: `[p1 p2 d1 p3 d2 d3 d4]`
-- **Syndrome**: `s1 + 2*s2 + 4*s3` → chỉ ra vị trí lỗi (không hard-code)
-- **AWGN sigma**: `σ = √(1/(2·R·EbN0))` với R=4/7 cho Hamming, R=1 cho uncoded
-- **BER**: tính trên Information Bits sau giải mã, không tính trên codeword
